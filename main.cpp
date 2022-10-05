@@ -5,7 +5,7 @@
 // Find the min and max among three values.
 // Display the numbers with ascending order ( min, other, max).
 
-#include <iomanip>
+
 #include <iostream>
 using namespace std;
 
@@ -22,6 +22,7 @@ int main() {
       min = num2;
         else //num2 >= num3
      min = num3;
+    other = num1;
     }
   else // num1 <= num2
   {
@@ -29,6 +30,7 @@ int main() {
      min = num1;
     else 
      min = num3;
+    other = num2;
   }//max numbers
     if (num1 < num2)
   {
@@ -36,7 +38,7 @@ int main() {
      max = num2;
         else //num2 >= num3
        max = num3;
-   
+      other = num1;
     }
   else // num1 >= num2
   {
@@ -44,11 +46,12 @@ int main() {
   max = num1;
     else 
     max = num3;
+    other = num2;
   }
-  cout << "max" << max << endl;
-  cout << "min" << max << endl;
+  cout << "max:" << max << endl;
+  cout << "min:" << min << endl;
   //other value
-  
+  cout << "other:" << other << endl;
 
   
   }
